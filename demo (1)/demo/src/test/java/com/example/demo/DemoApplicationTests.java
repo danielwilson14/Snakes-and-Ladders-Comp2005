@@ -2,21 +2,19 @@ package com.example.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
 class DemoApplicationTests {
 
 	@Test
-	public boolean PositionChecker(int[] movementsArray, int position) {
+	void PositionChecker(int[] movementsArray, int position) {
 		int sum = 0;
 		for (int i = 0; i < movementsArray.length; i++) {
 			sum += movementsArray[i];
 		}
 
-		if(sum != position) {
-			return false;
-		}
-		return true;
+		assertEquals(position, sum);
 	}
 
 	@Test
