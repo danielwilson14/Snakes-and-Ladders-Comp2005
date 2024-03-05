@@ -7,7 +7,16 @@ import org.springframework.boot.test.context.SpringBootTest;
 class DemoApplicationTests {
 
 	@Test
-	void PositionChecker() {
+	public boolean PositionChecker(int[] movementsArray, int position) {
+		int sum = 0;
+		for (int i = 0; i < movementsArray.length; i++) {
+			sum += movementsArray[i];
+		}
+
+		if(sum != position) {
+			return false;
+		}
+		return true;
 	}
 
 	@Test
@@ -42,7 +51,7 @@ class DemoApplicationTests {
 
 	@Test
 	void CorrectMoveTest() {
-		
+
 	}
 
 }
