@@ -18,13 +18,8 @@ class DemoApplicationTests {
 	}
 
 	@Test
-	void BottomOfLadderChecker() {
-
-	}
-
-	@Test
-	void TopOfLadderChecker() {
-
+	void LadderChecker(int position) {
+		assertFalse(position == 2 || position == 15);
 	}
 
 	@Test
