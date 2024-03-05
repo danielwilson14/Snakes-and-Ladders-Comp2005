@@ -7,7 +7,42 @@ import org.springframework.boot.test.context.SpringBootTest;
 class DemoApplicationTests {
 
 	@Test
-	void contextLoads() {
+	void PositionChecker() {
+	}
+
+	@Test
+	void BottomOfLadderChecker() {
+
+	}
+
+	@Test
+	void TopOfLadderChecker() {
+
+	}
+
+	@Test
+	void BottomOfSnakeChecker() {
+
+	}
+
+	@Test
+	void TopOfSnakeChecker() {
+
+	}
+
+	@Test
+	void NormalBlockChecker() {
+
+	}
+
+	@Test
+	void FinshLineChecker() {
+
+	}
+
+	@Test
+	void CorrectMoveTest() {
+		
 	}
 
 }
