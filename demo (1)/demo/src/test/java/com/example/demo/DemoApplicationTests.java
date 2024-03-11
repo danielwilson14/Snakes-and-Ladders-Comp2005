@@ -3,9 +3,11 @@ package com.example.demo;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 @SpringBootTest
 class DemoApplicationTests {
+
 
 	@Test
 	void PositionChecker(int[] movementsArray, int position) {
@@ -19,7 +21,9 @@ class DemoApplicationTests {
 
 	@Test
 	void LadderChecker(int position) {
-		assertFalse(position == 2 || position == 15);
+
+		assertFalse(position == 22| position == 6);
+
 	}
 
 	@Test
